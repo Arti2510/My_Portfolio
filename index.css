@@ -550,6 +550,35 @@ footer button{
     margin-bottom: 5px;
 }
 
+/* Light Theme Styles */
+body.light-theme {
+  background-color: white;
+  color: red;
+}
+
+/* body.light-theme header, */
+body.light-theme .section1,
+body.light-theme .section2,
+body.light-theme .section3,
+body.light-theme .section_Project,
+body.light-theme .section_certification,
+body.light-theme .contact,
+body.light-theme footer {
+  background-color: white;
+  color: red;
+}
+
+/* Optional: Make sure already red text like your name remains red */
+b[style*="background-color: red"] {
+  color: red !important;
+}
+
+/* Smooth transitions */
+body {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+
 /* media queries  for mobiles */
 @media screen and (min-width:250px) and (max-width:480px){
     header{

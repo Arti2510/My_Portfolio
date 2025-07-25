@@ -15,12 +15,12 @@
         <img src="images/logo.jpg" alt="Logo" class="logo" />
         <span
           ><h2>
-            <b style="background-color: red; padding: 5px">Arti</b> Maurya
+            <b style="background-color: red; padding: 5px; color: black !important;">Arti</b> Maurya
           </h2></span
         >
         <!-- day night toggle button -->
         <label class="switch">
-          <input type="checkbox" value="day" id="toggleMode" /> 
+          <input type="checkbox" value="day" id="theme-toggle" /> 
           <span class="slider round"></span>
         </label>
       <!-- menubar -->
@@ -522,5 +522,12 @@
         </button>
       </a>
     </footer>
+    <script>
+  const checkbox = document.getElementById('theme-toggle');
+
+  checkbox.addEventListener('change', function () {
+    document.body.classList.toggle('light-theme', this.checked);
+  });
+</script>
   </body>
 </html>
