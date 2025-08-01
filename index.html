@@ -11,20 +11,25 @@
   </head>
   <body>
     <header>
-        <!-- logo for portfolio -->
-        <img src="images/logo.jpg" alt="Logo" class="logo" />
-        <span
-          ><h2>
-            <b style="background-color: red; padding: 5px; color: black !important;">Arti</b> Maurya
-          </h2></span
-        >
-        <!-- day night toggle button -->
-        <label class="switch">
-          <input type="checkbox" value="day" id="theme-toggle" /> 
-          <span class="slider round"></span>
-        </label>
+      <div class="hamburger" onclick="toggleNavbar()">☰</div>
+      <!-- logo for portfolio -->
+      <img src="images/logo.jpg" alt="Logo" class="logo" />
+      <span
+        ><h2>
+          <b
+            style="background-color: red; padding: 5px; color: black !important"
+            >Arti</b
+          >
+          Maurya
+        </h2></span
+      >
+      <!-- day night toggle button -->
+      <label class="switch">
+        <input type="checkbox" value="day" id="theme-toggle" />
+        <span class="slider round"></span>
+      </label>
       <!-- menubar -->
-      <nav>
+      <nav id="navbar">
         <a href="#home" style="color: red">Home</a>
         <a href="#aboutme">AboutMe</a>
         <a href="#id_skills">Skills</a>
@@ -40,14 +45,17 @@
           <h6>WELCOME TO MY WORLD!</h6>
           <br />
           <h2>
-            Hi, I'm <b style="color: red">Arti Maurya</b><br />an Entry Level
+            Hi, I'm <b style="color: red">Arti Maurya</b><br />an Entry-Level
             Full Stack <br />Developer.
           </h2>
           <br />
           <p>
             <small
-              >I have completed my MCA in 2024. I am proficient in MERN
-              Stack,<br />user experience, researcher, web development.</small
+              >I have completed my MCA in 2024 and also completed a Full Stack
+              Development<br />
+              course from Internshala. I am proficient in MERN Stack, and have
+              <br />skills in user experience, researcher, web
+              development.</small
             >
           </p>
           <br />
@@ -143,7 +151,7 @@
             </span>
           </div>
         </div>
-        <img src="images/mypic.jpg" alt="My_pic" class="section1_mypic" />
+        <img src="images/Arti_Pic.jpeg" alt="My_pic" class="section1_mypic" />
       </section>
       <!-- deep introduction or read more section -->
       <section class="section2" id="readmore">
@@ -151,25 +159,35 @@
           <h2 style="color: red">About</h2>
           <p>&nbsp;&nbsp;Who Is Arti ?</p>
         </div>
-        <img src="images/mypic.jpg" alt="My_pic" />
+        <img src="images/Arti_Pic.jpeg" alt="My_pic" />
         <div class="section2_intro2">
           <h4 style="color: chartreuse">
             &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;A curiosity-driven
             Front-End Developer with design chops.
           </h4>
           <p>
-            &nbsp;&nbsp; &nbsp;&nbsp;I am a Full Stack Developer from India,
-            with a strong focus in frontend and backend design and coding. I
-            love get new experiences and always learn from my surroundings.I'm
-            passionate about bringing both the technical and visual aspects of
-            digital products to life. User experience, beautiful pixels and
-            writing clean accessible, human code matters to me. I sweat the
-            details. And as a follower of John Maeda’s laws of simplicity, I
-            agree that less is more.I'm happiest when I'm creating, learning,
-            exploring and thinking about how to make things better. Currently
-            solving deceptively simple problems at usePastel.com. I'm not
-            available for any freelance work, but feel free to reach out and say
-            hello! I promise I don't bite 😉
+            &nbsp;&nbsp; I am a Full Stack Developer from India with a strong
+            foundation in both front-end and back-end technologies. I have
+            completed my MCA in 2024 and successfully finished a Full Stack Web
+            Development course from Internshala, where I gained hands-on
+            experience with the MERN stack (MongoDB, Express.js, React.js,
+            Node.js).<br /><br />
+
+            &nbsp;&nbsp; I love building interactive and user-friendly websites
+            that combine clean design with efficient code. I'm always eager to
+            learn new technologies and improve my skills by working on
+            challenging projects. During my learning journey, I have built
+            projects like a YouTube Clone, an e-commerce site (ShoppyGlobe), and
+            a personal portfolio website.<br /><br />
+
+            &nbsp;&nbsp; I'm passionate about creating great user experiences
+            and writing clean, accessible code. I believe in the power of
+            simplicity and continuous learning. When I’m not coding, I enjoy
+            exploring new ideas, solving problems, and improving existing
+            solutions.<br /><br />
+
+            &nbsp;&nbsp; I'm currently not available for freelance work, but
+            feel free to reach out and say hello! 😊
           </p>
           <br />
           <div class="container-link">
@@ -192,27 +210,27 @@
           <div class="section3_skills1">
             <p>HTML</p>
             <div class="container">
-              <div class="skills1 html">90%</div>
+              <div class="skills1 html">95%</div>
             </div>
             <p>CSS</p>
             <div class="container">
-              <div class="skills1 css">80%</div>
+              <div class="skills1 css">93%</div>
             </div>
             <p>JavaScript</p>
             <div class="container">
-              <div class="skills1 js">65%</div>
+              <div class="skills1 js">92%</div>
             </div>
             <p>MERN Stack</p>
             <div class="container">
-              <div class="skills1 Mern">60%</div>
+              <div class="skills1 Mern">90%</div>
             </div>
             <p>Data Structures & Algorithms</p>
             <div class="container">
-              <div class="skills1 DSA">60%</div>
+              <div class="skills1 DSA">70%</div>
             </div>
             <p>DBMS</p>
             <div class="container">
-              <div class="skills1 dbms">60%</div>
+              <div class="skills1 dbms">75%</div>
             </div>
           </div>
           <div class="section3_skills2">
@@ -270,11 +288,33 @@
               full-stack web applications using MongoDB, Express.js, React, and
               Node.js (MERN). The course not only covered the fundamentals of
               front-end and back-end development but also provided hands-on
-              experience in building end-to-end web applications
+              experience in building end-to-end web applications.
             </p>
             <br /><br />
             <a
               href="https://trainings.internshala.com/s/v/3563678/4a1df493"
+              target="_blank"
+              ><button class="btn_certificate">View</button></a
+            >
+          </div>
+          <div class="Certification4 certification" id="content">
+            <h3>Full Stack Development Course (MERN) From Internshala</h3>
+            <br />
+            <p>
+              I successfully completed a Full Stack Web Development course from
+              Internshala, where I gained hands-on experience in both front-end
+              and back-end technologies. The course provided in-depth training
+              in HTML, CSS, JavaScript, React.js, Node.js, Express.js, and
+              MongoDB. Through various assignments and real-world projects like
+              a YouTube Clone, e-commerce website (ShoppyGlobe), and portfolio
+              site, I developed the ability to build dynamic, responsive, and
+              fully functional web applications. This course significantly
+              strengthened my understanding of the MERN stack and prepared me
+              for real-world development challenges.
+            </p>
+            <br /><br />
+            <a
+              href="https://trainings.internshala.com/s/v/3739160/e10ff42d"
               target="_blank"
               ><button class="btn_certificate">View</button></a
             >
@@ -523,11 +563,15 @@
       </a>
     </footer>
     <script>
-  const checkbox = document.getElementById('theme-toggle');
+      const checkbox = document.getElementById("theme-toggle");
 
-  checkbox.addEventListener('change', function () {
-    document.body.classList.toggle('light-theme', this.checked);
-  });
-</script>
+      checkbox.addEventListener("change", function () {
+        document.body.classList.toggle("light-theme", this.checked);
+      });
+
+      function toggleNavbar() {
+        document.getElementById("navbar").classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

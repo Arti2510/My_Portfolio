@@ -83,6 +83,14 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
+/* Hamburger Button Styling */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+}
+
 /* menubar section */
 nav {
   display: flex;
@@ -118,7 +126,7 @@ nav a{
 
 /* image with animation */
 .section1_mypic{
-    width: 100%;
+    width: 50%;
     max-width: 300px;
     height: auto;
     animation: imageMove 5s linear 2s infinite alternate;
@@ -281,10 +289,10 @@ a.button:active {
   display: flex;
 }
 .html {width: 95%; background-color: #f44336;}
-.css {width: 85%; background-color: #f44336;}
-.js {width: 75%; background-color: #f44336;}
-.Mern {width: 70%; background-color: #f44336;}
-.DSA {width: 60%; background-color: #f44336;}
+.css {width: 93%; background-color: #f44336;}
+.js {width: 92%; background-color: #f44336;}
+.Mern {width: 90%; background-color: #f44336;}
+.DSA {width: 70%; background-color: #f44336;}
 .dbms {width: 75%; background-color: #f44336;}
 .section3_skills2{
     width: 30%;
@@ -583,7 +591,7 @@ body {
 @media screen and (min-width:250px) and (max-width:480px){
     header{
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         justify-content: space-between;
         align-items: center;
         position: static;
@@ -729,7 +737,30 @@ body {
     }
     header{
         position: static;
+        width: 100%;
     }
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    background-color: black;
+    position: absolute;
+    top: 40px; /* adjust based on header height */
+    left: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+  }
+
+  nav.show {
+    display: flex;
+  }
 }
 
 
